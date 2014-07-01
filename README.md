@@ -1,0 +1,1 @@
+# A coding challenge about Picnic Baskets
