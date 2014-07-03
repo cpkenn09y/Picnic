@@ -13,39 +13,28 @@ PicnicBasket.prototype.init = function(config) {
     this.items = config.items || this.items;
     this.max_items = config.max_items || this.max_items;
   }
-};
+}
 
 PicnicBasket.prototype.addItem = function(item) {
-  return this.items.push(item);
-};
+  // Should add the item object to the basket
+  // Assume only well-formatted items will be entered
 
-PicnicBasket.prototype.removeItem = function(item_name) {
-  if (item_name) {
-    return this.removeSpecifiedItem(item_name);
-  } else {
-    return this.removeLastItem();
-  }
-};
+}
 
-PicnicBasket.prototype.removeSpecifiedItem = function(item_name) {
-  var item_index;
-  this.items.forEach(function(item, index) {
-    if (item.name === item_name) item_index = index;
-  });
-  return this.items.splice(item_index, 1);
-};
 
-PicnicBasket.prototype.removeLastItem = function() {
-  return this.items.pop();
-};
+
+PicnicBasket.prototype.removeItem = function() {
+  // Should remove 1 of the item passed as an argument (if any)
+  // or the last item in the array (if no argument is passed)
+  // At most 1 argument will be passed
+
+}
 
 PicnicBasket.prototype.numberOf = function(item_type) {
-  var counter = 0;
-  basket.items.forEach(function(item) {
-    if (item.type === item_type) counter ++;
-  });
-  return counter;
-};
+  // Should return the number of items of type item_type
+
+}
+
 
 // PROVIDED DRIVER CODE:
 
