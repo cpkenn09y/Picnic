@@ -36,6 +36,8 @@ PicnicBasket.prototype.numberOf = function(item_type) {
 }
 
 
+// PROVIDED DRIVER CODE:
+
 /*
 *   Now we test what we've written above.
 *   NOTE: the way console.log works, it is best to just uncomment only one log at a time.

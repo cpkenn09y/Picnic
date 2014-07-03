@@ -1,3 +1,8 @@
+/* This is a model of a picnic basket. It holds items.
+   Items can be added/removed, but the basket can only hold a
+   certain number of them.
+*/
+
 function PicnicBasket() {
   this.items = [];
   this.max_items = 3;
@@ -42,7 +47,7 @@ PicnicBasket.prototype.numberOf = function(item_type) {
   return counter;
 };
 
-// DRIVER CODE:
+// PROVIDED DRIVER CODE:
 
 /*
 *   Now we test what we've written above.
